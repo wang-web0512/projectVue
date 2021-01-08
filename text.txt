@@ -1,0 +1,59 @@
+router:
+      index.js 路由文件
+
+
+pages://组件文件夹
+    menu://菜单管理文件 
+         index.vue   //菜单管理插件
+         odal.vue   //点击新增后的弹框组件
+    part://角色管理文件
+        part.vue    //角色管理插件
+        modal.vue   //弹框插件
+        listt,vue   //列表表格插件
+    admin://管理员管理文件
+        admin.vue   //管理员管理插件
+        modal.vue   //弹框插件
+        listt,vue   //列表表格插件
+    classify://分类管理文件
+        classify.vue   //分类管理插件
+        modal.vue   //弹框插件
+        listt,vue   //列表表格插件
+    goods://商品管理文件
+        goods.vue   //商品管理插件
+        modal.vue   //弹框插件
+        listt,vue   //列表表格插件
+    spec://规格管理文件
+        spec.vue   //规格管理插件
+        modal.vue   //弹框插件
+        listt,vue   //列表表格插件
+    Home.vue    
+    Login.vue   登录组件
+    Layout.vue  布局组件
+
+
+utils://工具文件
+     element.js  element-ui 全局引入文件
+     http.js  二次封装axios 添加响应拦截
+     vm.js   兄弟组件传数据的中间平台
+
+
+store: //vuex文件
+    modules:子模块文件夹
+           menu.js 菜单管理模块   menu菜单
+           part.js 角色管理模块   part 角色
+           admin.js 管理员管理模块
+           classify.js  分类管理模块  classify分类
+    index.js :父模块
+
+request://请求
+    menu.js 菜单管理请求方法封装
+    part.js 角色管理数据请求方法封装 
+    admin.js 管理员管理数据请求方法封装
+
+
+
+circle 属性 不需要值 可改变为圆形 
+$success:成功时消息提示框 挂在到了Vue原型上了 调用时this.$success("消息体")
+$error:失败时消息提示框  用法 同上
+$http:封装过的发送请求方法 this.$http.请求方法
+$myconfirm  封装删除数据的提示框 需要一个参数 为回调函数
